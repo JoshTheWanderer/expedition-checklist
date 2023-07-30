@@ -1,0 +1,6 @@
+.title {
+  border-bottom: var(--border);
+  margin: 0;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+}

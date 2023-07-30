@@ -1,0 +1,26 @@
+.item {
+  display: block;
+  padding-bottom: var(--space-sm);
+}
+
+.checkbox {
+  accent-color: var(--color-primary);
+  height: var(--space-md);
+  width: var(--space-md);
+}
+
+.label {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .checkbox {
+    accent-color: transparent;
+  }
+}

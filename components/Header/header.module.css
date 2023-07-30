@@ -1,0 +1,6 @@
+.header {
+  border-bottom: var(--border);
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  margin: var(--space-md);
+}

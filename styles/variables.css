@@ -1,0 +1,60 @@
+:root {
+  /*
+    * Font
+    */
+  --font-family-title: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont,
+    Roboto, Helvetica, Arial, sans-serif;
+  --font-family-base: Roboto, Lato, -apple-system, system-ui, BlinkMacSystemFont,
+    Helvetica, Arial, sans-serif;
+
+  --font-line-height: 1.25;
+  --font-line-height-sm: 1.125;
+  --font-line-height-md: 1.167;
+  --font-line-height-lg: 1.5;
+  --font-line-height-xl: 1.75;
+
+  --font-size-base: 1rem;
+  --font-size-xs: 0.75em;
+  --font-size-sm: 0.875em;
+  --font-size-md: 1.125em;
+  --font-size-lg: 1.5em;
+  --font-size-xl: 2.25em;
+  --font-size-xxl: 3em;
+  --font-size-h1: 2.25em;
+  --font-size-h2: 1.5em;
+  --font-size-h3: 1.125em;
+
+  --font-weight-base: 400;
+  --font-weight-light: 300;
+  --font-weight-bold: 500;
+  --font-weight-black: 700;
+
+  /*
+    * Spacing
+    */
+  --space-md: 1rem;
+  --space-xs: calc(var(--space-md) / 4);
+  --space-sm: calc(var(--space-md) / 2);
+  --space-lg: calc(var(--space-md) * 2);
+  --space-xl: calc(var(--space-md) * 4);
+  --space-thumb: 2.75rem;
+
+  /*
+    * Color
+    */
+  --color-white: #fff;
+  --color-black: #0d1f22;
+  --color-primary: #264027;
+  --color-secondary: #444;
+
+  /*
+    * Transition
+    */
+  --transition-duration: 0.2s;
+  --transition-timing: ease-in-out;
+
+  /*
+   * Borders
+   */
+  --border: 1px solid var(--color-black);
+}
