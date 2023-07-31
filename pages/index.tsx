@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'preact/hooks';
 
+import Filters from '../components/Filters/Filters';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
 import Item from '../components/Item/Item';
 import Lead from '../components/Lead/Lead';
-import Seasons from '../components/Seasons/Seasons';
 import Counts from '../components/counts/Counts';
 import rawData from '../data';
 import gridStyles from '../styles/grid.module.css';
@@ -13,7 +13,7 @@ import groupStyles from '../styles/group.module.css';
 export default function Page() {
   const [data, setData] = useState<typeof rawData>(rawData);
   const [season, setSeason] = useState<'winter' | 'summer'>('winter');
-  const [showOptional] = useState<boolean>(false);
+  const [optional, setOptional] = useState<boolean>(false);
   const [ownedCount, setOwnedCount] = useState<number>(0);
   const [packedCount, setPackedCount] = useState<number>(0);
 
@@ -23,7 +23,7 @@ export default function Page() {
         return {
           ...group,
           items: group.items.filter((item) => {
-            if (!showOptional && item.optional) {
+            if (!optional && item.optional) {
               return false;
             }
 
@@ -32,7 +32,7 @@ export default function Page() {
         };
       })
     );
-  }, [season, showOptional, setData]);
+  }, [season, optional, setData]);
 
   const updateOwnedCount = (owned: -1 | 1) => {
     setOwnedCount((count) => count + owned);
@@ -48,6 +48,12 @@ export default function Page() {
     }
   };
 
+  const showOptional = (e: Event) => {
+    if (e.target instanceof HTMLInputElement) {
+      setOptional(e.target.checked);
+    }
+  };
+
   return (
     <>
       <Header />
@@ -59,7 +65,12 @@ export default function Page() {
             packedCount={packedCount}
             countable={data}
           />
-          <Seasons changeSeason={changeSeason} season={season} />
+          <Filters
+            changeSeason={changeSeason}
+            season={season}
+            showOptional={showOptional}
+            optional={optional}
+          />
         </div>
         <hr />
         <form className={gridStyles.grid}>
