@@ -98,30 +98,32 @@ const data: ItemGroup[] = [
         id: 6,
         name: 'Water Bottle',
         season: 'all',
-        optional: true,
       },
       {
         id: 7,
-        name: 'Water Filter and Purification Tablets',
+        name: 'Water Filter or Purification Tablets',
         optional: true,
-        notes:
-          'If you’re going somewhere very remote, you might be able to get away without this. Check out guidebooks and seek advice from locals.',
-        season: 'all',
+        season: 'winter',
       },
       {
         id: 8,
+        name: 'Water Filter or Purification Tablets',
+        season: 'summer',
+      },
+      {
+        id: 9,
         name: 'Mug',
         notes: 'Go plastic. Metal mugs burn lips.',
         season: 'all',
       },
       {
-        id: 9,
+        id: 10,
         name: 'Spork',
         notes: 'Long handled sporks are the best.',
         season: 'all',
       },
       {
-        id: 10,
+        id: 11,
         name: 'Insulated Food Pouch',
         optional: true,
         notes:
@@ -129,18 +131,18 @@ const data: ItemGroup[] = [
         season: 'all',
       },
       {
-        id: 11,
+        id: 12,
         name: 'Pot Scrubber',
         optional: true,
         season: 'all',
       },
       {
-        id: 12,
+        id: 13,
         name: 'Salt and Pepper',
         season: 'all',
       },
       {
-        id: 13,
+        id: 14,
         name: 'Burner Sheet',
         optional: true,
         notes:
@@ -439,6 +441,16 @@ const data: ItemGroup[] = [
       {
         id: 13,
         name: 'Repair kit',
+        season: 'all',
+      },
+      {
+        id: 14,
+        name: 'Ear plugs',
+        season: 'all',
+      },
+      {
+        id: 15,
+        name: 'Wired headphones',
         season: 'all',
       },
     ],
