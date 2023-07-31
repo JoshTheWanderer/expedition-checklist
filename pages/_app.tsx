@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Personal Backpacking Checklist</title>
+        <title>Solo Backpacking Checklist</title>
       </Head>
       <Component {...pageProps} />
     </>
