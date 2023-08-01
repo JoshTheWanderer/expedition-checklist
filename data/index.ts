@@ -149,6 +149,11 @@ const data: ItemGroup[] = [
           'If you’re going to cook inside your tent and you have a footprint, this will help you avoid setting your tent on fire.',
         season: 'all',
       },
+      {
+        id: 15,
+        name: 'Coffee filter',
+        season: 'all',
+      },
     ],
   },
   {
