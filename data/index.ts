@@ -453,6 +453,26 @@ const data: ItemGroup[] = [
         name: 'Wired headphones',
         season: 'all',
       },
+      {
+        id: 16,
+        name: 'Camera',
+        season: 'all',
+      },
+      {
+        id: 17,
+        name: 'Camera batteries',
+        season: 'all',
+      },
+      {
+        id: 18,
+        name: 'Camera lenses',
+        season: 'all',
+      },
+      {
+        id: 19,
+        name: 'Camera tripod',
+        season: 'all',
+      },
     ],
   },
 ];
