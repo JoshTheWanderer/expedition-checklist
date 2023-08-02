@@ -71,6 +71,18 @@ const nextConfig = {
             key: 'X-XSS-Protection',
             value: '0',
           },
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: 'packing.joshthewanderer.com',
+          },
+          {
+            key: 'Access-Control-Allow-Methods',
+            value: 'GET',
+          },
+          {
+            key: 'Access-Control-Allow-Credentials',
+            value: 'false',
+          },
         ],
       },
     ];
