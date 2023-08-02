@@ -21,7 +21,7 @@ const nextConfig = {
           {
             key: 'Content-Security-Policy',
             value:
-              "default-src 'none'; script-src 'self'; script-src-elem 'self'; script-src-attr 'self'; style-src 'self' 'unsafe-inline' https://fonts.gstatic.com; img-src 'self' data:; font-src https://fonts.gstatic.com; connect-src 'self'; frame-ancestors 'none'; base-uri: 'none'; form-action: 'self';  upgrade-insecure-requests; block-all-mixed-content",
+              "default-src 'none'; script-src 'self'; script-src-elem 'self'; script-src-attr 'self'; style-src 'self' 'unsafe-inline' https://fonts.gstatic.com; img-src 'self' data:; font-src https://fonts.gstatic.com; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content",
           },
           {
             key: 'Content-Origin-Opener-Policy',
